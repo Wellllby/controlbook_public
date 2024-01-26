@@ -6,8 +6,9 @@ from blockbeamAnimation import blockbeamAnimation
 from dataPlotter import dataPlotter
 
 # instantiate reference input classes
-reference = signalGenerator(amplitude=a_r, frequency=f_r)
-
+reference = signalGenerator(amplitude=0.5, frequency=0.1)
+zRef = signalGenerator(amplitude=0.5, frequency=1)
+fRef = signalGenerator(amplitude=5, frequency=.5)
 
 # instantiate the simulation plots and animation
 dataPlot = dataPlotter()

@@ -2,14 +2,6 @@
 import numpy as np
 # import control as cnt
 
-# Parameters for input signals
-a_r = 0.5  # amplitude of reference input
-f_r = 0.05  # frequency of reference input
-a_z = 0.5  # amplitude of z input
-f_z = 0.05  # frequency of z input
-a_f = 5  # amplitude of force disturbance
-f_f = 0.05  # frequency of force disturbance
-
 # Physical parameters of the  ballbeam known to the controller
 m1 = 1  # Mass of the block, kg
 m2 = 1  # mass of beam, kg
