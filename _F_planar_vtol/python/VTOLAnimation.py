@@ -3,6 +3,9 @@ import matplotlib.patches as mpatches
 from matplotlib.widgets import Button
 import numpy as np
 import VTOLParam as P
+import matplotlib
+
+matplotlib.use('TkAgg')
 
 def exit_program(event):
     exit()
