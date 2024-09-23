@@ -26,7 +26,11 @@ while t < P.t_end:  # main simulation loop
     # update animation
     state = np.array([[z], [h], [theta], [0.0], [0.0], [0.0]])
     animation.update(state)
-    dataPlot.update(t, state, [[5,1]], z, h)
+    # TODO thrust and ref values for left and right motors don't matter for this simulation, 
+    # but they will be needed for future simulations using the system dynamics.
+    motor_thrusts = np.array([[0], [0]])
+  # dataplot.update(t, state, motor_thrusts, z_ref, h_ref)
+    dataPlot.update(t, state, motor_thrusts, 0.0, 0.0)
     # advance time by t_plot
     t += P.t_plot
     plt.pause(0.001)
