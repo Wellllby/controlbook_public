@@ -1,4 +1,5 @@
 errorTolerance = 0.001
+# adjusted by Preston Draper to old version
 dynamics_test_cases = [
 #   (init_state,     input,      true state of plant) 
     ([[0.],[0.]],       0.0,        [[0.],[0.]]),
