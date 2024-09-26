@@ -29,7 +29,7 @@ Ts = 0.1 # sample time for simulation
 t_plot = 0.01  # the plotting and animation is updated at this rate
 
 # saturation limits
-max_thrust = 10.0  # Max thrust produced by each motor, N
+max_thrust = 10  # Max thrust produced by each motor, N
 
 # mixing matrix
 unmixing = np.array([[1.0, 1.0], [d, -d]]) # converts fl and fr (LR) to force and torque (FT)

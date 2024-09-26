@@ -1,6 +1,6 @@
 # use this file to test your dynamics file
 import numpy as np
-from VTOLDynamics import Dynamics as dynamics
+from VTOLDynamics import VTOLDynamics as dynamics
 import VTOLParam as P
 import testCases as TC
 
@@ -9,7 +9,7 @@ P.Ts = .01
 plant = dynamics()
 numTests = 0
 numTestsPassed = 0
-    
+
 # test all test cases
 for initial_state, input, true_state in TC.dynamics_test_cases:
     numTests += 1

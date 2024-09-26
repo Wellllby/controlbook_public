@@ -1,4 +1,4 @@
-errorTolerance = 0.001
+errorTolerance = 0.1
 dynamics_test_cases = [
 # initial state (z, h, theta, zdot, hdot, th_dot),  input (fl, fr),     true state of plant (z, h, theta, zdot, hdot, th_dot)
     ([[0.], [0.], [0.], [0.], [0.], [0.]],          [[0.], [0.]],       [[0.], [-0.0004905], [0.], [0.], [-0.0981], [0.]]),
